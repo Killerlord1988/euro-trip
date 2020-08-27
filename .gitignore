@@ -12,3 +12,6 @@ build/
 .publish/
 Thumbs.db
 .publish
+source/css/*.css
+source/css/*.map
+package-lock.json
