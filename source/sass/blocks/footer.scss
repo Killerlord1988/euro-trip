@@ -1,6 +1,7 @@
 .footer {
   display: flex;
   margin-bottom: 75px;
+  padding-left: 32px;
 }
 
 .footer__block {
@@ -14,7 +15,7 @@
 .footer-title {
   font-weight: 600;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .footer__city-group {
@@ -26,20 +27,25 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-right: 51px;
+  margin-right: 28px;
+}
+
+.footer__city:last-child {
+  margin-right: 34px;
 }
 
 .footer__our-contacts {
-  margin-left: 90px;
-  margin-right: 33px;
+  margin-left: 88px;
+  padding-right: 40px;
 }
 
-.footer__about {
-  margin-right: 31px;
+.footer__about-corporate {
+  margin-left: 48px;
 }
 
-.footer__item {
-  margin-bottom: 10px;
+.footer__promo {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .footer__city-link {

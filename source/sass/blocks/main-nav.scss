@@ -14,6 +14,7 @@
   text-decoration: none;
   margin-right: 40px;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .site-list__item:last-child {
@@ -26,13 +27,56 @@
   color: $color-dark-more;
 }
 
+.site-list__shape-arrow {
+  display: none;
+}
+
 .main-nav__tel {
   text-decoration: underline;
   font-size: 18px;
   color: $color-main;
+  margin-right: 15px;
 }
 
 .main-nav__tel--phone {
   margin-right: 6px;
-  stroke: red;
+  stroke: $color-main;
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav {
+    // display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .site-list__item {
+    padding: 17px 20px;
+    background-color: $color-light-grey;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .site-list__shape-arrow {
+    display: block;
+    margin-left: auto;
+  }
+
+  .site-list__link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .main-nav__tel {
+    display: none;
+  }
 }

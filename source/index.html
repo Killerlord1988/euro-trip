@@ -20,19 +20,23 @@
   <div style="display: none;">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
+
   <header class="page-header">
     <div class="page-header__top container">
+      <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo">
         <img src="img/logo.svg" alt="Логотип Way" width="58" height="22">
       </a>
+      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#" class="site-list__link">О путешествии</a></li>
-          <li class="site-list__item"><a href="#" class="site-list__link">Цены</a></li>
+            <use xlink:href="#icon-phone"></use>
+          <li class="site-list__item"><a href="#" class="site-list__link">О путешествии<svg class="site-list__shape-arrow" width="12" height="7"><use xlink:href="#icon-shape-arrow"></use></svg></a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Цены<svg class="site-list__shape-arrow" width="12" height="7"><use xlink:href="#icon-shape-arrow"></use></svg></a></li>
         </ul>
         <a href="tel:+7(499)784-684-46" class="main-nav__tel">
-          <svg class="main-nav__tel--phone" src="img/icon-phone.svg"
-            alt="иконка телефона" width="30" height="30">
+          <svg class="main-nav__tel--phone" alt="иконка телефона" width="30" height="30">
             <use xlink:href="#icon-phone"></use>
           </svg> +7 (499) -784-684-46</a>
       </nav>
@@ -85,9 +89,9 @@
         <use xlink:href="#icon-phone"></use>
       </svg>+7 (499) -784-684-46</a>
     </div>
-    <div class="footer__block footer__about">
+    <div class="footer__block footer__about-corporate">
       <h2 class="footer-title">Корпоративные путешествия</h2>
-      <p>Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию,
+      <p class="footer__promo">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию,
         помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
     </div>
   </footer>
