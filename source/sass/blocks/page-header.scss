@@ -1,0 +1,23 @@
+.page-header__top {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__bottom {
+  background-image: url("../img/bg-header@1x.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  min-height: 860px;
+}
+
+.page-header__promo {
+  position: relative;
+}
+
+// @media (max-width: 1160px) {
+//   .page-header__bottom {
+//     background-size: auto;
+//   }
+// }

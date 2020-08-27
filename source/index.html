@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="js/main.js" as="script">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
@@ -14,10 +15,82 @@
   <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
   <title>Путешествие по Европе</title>
 </head>
-<body>
-  <h1>Hello World</h1>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus quam quo rem nam ullam consequuntur! Illum assumenda fugiat nihil sapiente dolor molestias voluptatum eaque maiores recusandae adipisci, rerum quas tenetur.</p>
-  <p class="poppin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dignissimos iusto obcaecati, accusantium nihil sapiente quaerat animi tempore modi ex doloribus deserunt quasi vero ipsa maxime amet maiores ipsum placeat?</p>
 
+<body>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <header class="page-header">
+    <div class="page-header__top container">
+      <a href="index.html" class="page-header__logo">
+        <img src="img/logo.svg" alt="Логотип Way" width="58" height="22">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="#" class="site-list__link">О путешествии</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Цены</a></li>
+        </ul>
+        <a href="tel:+7(499)784-684-46" class="main-nav__tel">
+          <svg class="main-nav__tel--phone" src="img/icon-phone.svg"
+            alt="иконка телефона" width="30" height="30">
+            <use xlink:href="#icon-phone"></use>
+          </svg> +7 (499) -784-684-46</a>
+      </nav>
+    </div>
+    <div class="page-header__bottom">
+      <div class="page-header__container container">
+        <div class="page-header__promo promo">
+          <h1 class="promo__title">Путешествие по Европе</h1>
+          <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
+            потрясающая красота природы.</p>
+          <button class="promo__button button">Смотреть тур <img class="promo__button--arrow" src="img/icon-arrow-down.svg"
+              alt="стрелка вниз" width="14" height="14"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main></main>
+  <footer class="footer container">
+    <div class="footer__block footer__next-trip">
+      <h2 class="footer-title">Следующие путешесвия</h2>
+      <div class="footer__city-group">
+      <ul class="footer__city">
+        <li class="footer__item"><a href="" class="footer__city-link">Марсель</a></li>
+        <li class="footer__item"><a href="" class="footer__city-link">Ним</a></li>
+        <li class="footer__item"><a href="" class="footer__city-link">Монпелье</a></li>
+        <li class="footer__item"><a href="" class="footer__city-link">Барселона</a></li>
+        <li class="footer__item"><a href="" class="footer__city-link">Пальма</a></li>
+      </ul>
+      <ul class="footer__city">
+        <li class="footer__item"><a href="" class="footer__city-link">Сардиния</a></li>
+        <li class="footer__item"><a href="" class="footer__city-link">Палермо</a></li>
+        <li class="footer__item"><a href="" class="footer__city-link">Катания</a></li>
+        <li class="footer__item"><a href="" class="footer__city-link">Неаполь</a></li>
+        <li class="footer__item"><a href="" class="footer__city-link">Рим</a></li>
+      </ul>
+      <ul class="footer__city">
+        <li class="footer__item"><a href="" class="footer__city-link">Корс</a></li>
+        <li class="footer__item"><a href="" class="footer__city-link">Ницца</a></li>
+        <li class="footer__item"><a href="" class="footer__city-link">Монако</a></li>
+        <li class="footer__item"><a href="" class="footer__city-link">Динь-ле-Бен</a></li>
+        <li class="footer__item"><a href="" class="footer__city-link">Гренобль</a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="footer__block footer__our-contacts">
+      <h2 class="footer-title">Наши контакты</h2>
+      <a href="mailto:puteshestviemechta@gmail.ru" class="footer__contact footer__mail"><img class="footer__tel--mail" src="img/icon-mail.svg"
+        alt="иконка конверта" width="26" height="20">puteshestviemechta@gmail.ru</a>
+      <a href="tel:+7(499)784-684-46" class="footer__contact footer__tel"><svg class="footer__tel--phone" alt="иконка телефона" width="30" height="30">
+        <use xlink:href="#icon-phone"></use>
+      </svg>+7 (499) -784-684-46</a>
+    </div>
+    <div class="footer__block footer__about">
+      <h2 class="footer-title">Корпоративные путешествия</h2>
+      <p>Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию,
+        помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+    </div>
+  </footer>
 </body>
+
 </html>

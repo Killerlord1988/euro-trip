@@ -1,0 +1,31 @@
+.promo {
+  width: 412px;
+  position: absolute;
+  left: 55.99%;
+  top: 190px;
+}
+
+.promo__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.10667px;
+  color: $white;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.promo__text {
+  line-height: 27px;
+  letter-spacing: -0.466667px;
+  color: $white;
+  margin-bottom: 39px;
+}
+
+.promo__button {
+  width: 340px;
+}
+
+.promo__button--arrow {
+  margin-left: auto;
+}

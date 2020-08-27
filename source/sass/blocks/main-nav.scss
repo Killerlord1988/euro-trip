@@ -1,0 +1,38 @@
+.main-nav {
+  display: flex;
+}
+
+.main-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 53px;
+}
+
+.site-list__item {
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 14px;
+}
+
+.site-list__item:last-child {
+  margin-right: 0;
+}
+
+.site-list__link,
+.main-nav__tel {
+  display: flex;
+  color: $color-dark-more;
+}
+
+.main-nav__tel {
+  text-decoration: underline;
+  font-size: 18px;
+  color: $color-main;
+}
+
+.main-nav__tel--phone {
+  margin-right: 6px;
+  stroke: red;
+}

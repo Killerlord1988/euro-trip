@@ -1,0 +1,14 @@
+.button {
+  color: $white;
+  text-transform: uppercase;
+  background-color: $color-main;
+  height: 75px;
+  padding: 30px 40px;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+}
