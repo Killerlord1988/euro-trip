@@ -4,6 +4,12 @@
   margin-bottom: 170px;
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .question {
+    background-image: url("../img/question-bg-desktop@2x.jpg");
+  }
+}
+
 .question__block {
   background-color: $white;
   border-radius: 5px;
@@ -86,4 +92,18 @@
   margin-right: auto;
   width: 176px;
   height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: $tablet-width) {
+  .question__block {
+    width: 658px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .question__button {
+    width: 250px;
+  }
 }

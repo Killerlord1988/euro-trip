@@ -102,3 +102,74 @@
   width: 382px;
   margin-left: auto;
 }
+
+@media (max-width: $tablet-width) {
+  .country-about {
+    margin-bottom: 112px;
+  }
+
+  .country-about__nav-wrapper {
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+
+  .country-about__nav-menulimiter {
+    width: 900;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .country-about__nav-wrapper:last-child {
+    margin-bottom: 0;
+  }
+
+  .country-about__nav {
+    margin-bottom: 33px;
+    cursor: grab;
+  }
+
+  .country-about__info-block {
+    flex-direction: column;
+  }
+
+  .country-about__info {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .country-about__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .country-about__title::before {
+    display: none;
+  }
+
+  .country-about__text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .country-about__buy {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .country-about__img {
+    width: 96%;
+  }
+
+  .country-about__review-block {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

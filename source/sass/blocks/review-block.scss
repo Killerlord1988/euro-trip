@@ -45,3 +45,9 @@
 
   letter-spacing: -0.466667px;
 }
+
+@media (max-width: $tablet-width) {
+  .review-block {
+    margin-top: 100px;
+  }
+}

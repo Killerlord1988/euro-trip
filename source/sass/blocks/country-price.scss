@@ -11,3 +11,9 @@
   margin-right: auto;
   z-index: -10;
 }
+
+@media (max-width: $tablet-width) {
+  .country-price__map-world {
+    display: none;
+  }
+}

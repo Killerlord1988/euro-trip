@@ -6,6 +6,7 @@
   font-size: 55px;
   line-height: 80px;
   letter-spacing: -1.245px;
+  margin-top: 200px;
   margin-bottom: 64px;
 }
 
@@ -97,4 +98,46 @@
 
   background-color: $white;
   z-index: 10;
+}
+
+@media (max-width: 1106px) {
+  .visit-places__list {
+    justify-content: space-evenly;
+  }
+
+  .visit-places__item:nth-child(4) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .visit-places__item:nth-child(5) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .visit-places__title {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .visit-places__title::before {
+    display: none;
+  }
+
+  .visit-places__instruction {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.466667px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }

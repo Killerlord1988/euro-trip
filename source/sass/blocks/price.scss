@@ -9,7 +9,7 @@
   flex-direction: column;
   padding: 30px;
   padding-top: 40px;
-  border: 3px solid rgba(44, 46, 63, 0.3);
+  border: 1px solid rgba(44, 46, 63, 0.3);
   border-radius: 6px;
   background-color: $white;
   margin-right: 30px;
@@ -17,7 +17,7 @@
 }
 
 .price__block-info--red {
-  border-color: $color-main;
+  border: 3px solid $color-main;
 }
 
 .price__header {
@@ -89,4 +89,51 @@
   margin-top: auto;
   text-align: center;
   width: 100%;
+}
+
+@media (max-width: $tablet-width) {
+  .price {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 125px;
+  }
+
+  .price__title {
+    margin-bottom: 10px;
+  }
+
+  .price__about-block {
+    order: 0;
+  }
+
+  .price__block-info {
+    order: 1;
+    padding: 0;
+    margin-right: 0;
+    border-radius: 10px 10px 0 0;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 288px;
+  }
+
+  .price__header {
+    flex-direction: column;
+    margin-bottom: 11px;
+  }
+
+  .price__instuction {
+    text-align: center;
+  }
+
+  .price__advantages {
+    margin-bottom: 30px;
+  }
+
+  .price__button {
+    margin-left: -21px;
+    margin-right: -21px;
+    width: auto;
+    transform: translateY(1px);
+  }
 }

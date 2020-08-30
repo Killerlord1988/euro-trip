@@ -69,8 +69,11 @@
             <div class="visit-places__overlay"><button class="visit-places__button">смотреть подробнее</button>
             </div>
             <picture>
+              <source media="(max-width: 1023px)"
+              srcset="img/grecee-tablet@1x.jpg 1x, img/grecee-tablet@2x.jpg 2x" width="288"
+              height="425">
               <img src="img/grecee-desktop@1x.jpg" srcset="img/grecee-desktop@2x.jpg 2x" alt="греция" width="350"
-                width="430">
+              height="430">
             </picture>
             <p class="visit-places__country">Греция</p>
           </div>
@@ -78,6 +81,9 @@
             <div class="visit-places__overlay"><button class="visit-places__button">смотреть подробнее</button>
             </div>
             <picture>
+              <source media="(max-width: 1023px)"
+              srcset="img/albania-tablet@1x.jpg 1x, img/albania-tablet@2x.jpg 2x" width="288"
+              height="425">
               <img src="img/albania-desktop@1x.jpg" srcset="img/albania-desktop@2x.jpg 2x" alt="албания" width="350"
                 width="430">
             </picture>
@@ -87,6 +93,9 @@
             <div class="visit-places__overlay"><button class="visit-places__button">смотреть подробнее</button>
             </div>
             <picture>
+              <source media="(max-width: 1023px)"
+              srcset="img/macedonia-tablet@1x.jpg 1x, img/macedonia-tablet@2x.jpg 2x" width="288"
+              height="425">
               <img src="img/macedonia-desktop@1x.jpg" srcset="img/macedonia-desktop@2x.jpg 2x" alt="македония"
                 width="350" width="430">
             </picture>
@@ -96,6 +105,9 @@
             <div class="visit-places__overlay"><button class="visit-places__button">смотреть подробнее</button>
             </div>
             <picture>
+              <source media="(max-width: 1023px)"
+              srcset="img/montenegro-tablet@1x.jpg 1x, img/montenegro-tablet@2x.jpg 2x" width="288"
+              height="425">
               <img src="img/montenegro-desktop@1x.jpg" srcset="img/montenegro-desktop@2x.jpg 2x" alt="черногория"
                 width="350" width="430">
             </picture>
@@ -105,6 +117,9 @@
             <div class="visit-places__overlay"><button class="visit-places__button">смотреть подробнее</button>
             </div>
             <picture>
+              <source media="(max-width: 1023px)"
+              srcset="img/сroatia-tablet@1x.jpg 1x, img/сroatia-tablet@2x.jpg 2x" width="288"
+              height="425">
               <img src="img/сroatia-desktop@1x.jpg" srcset="img/сroatia-desktop@2x.jpg 2x" alt="хорватия" width="350"
                 width="430">
             </picture>
@@ -128,13 +143,17 @@
         <input class="country-about__btn country-about__сroatia visually-hidden" type="radio"
           name="country-about-toggle" id="country-5">
 
-        <div class="country-about__nav">
+          <div class="country-about__nav-wrapper">
+          <div class="country-about__nav-menulimiter dragscroll">
+        <nav class="country-about__nav">
           <label class="country-about__label" for="country-1">Греция</label>
           <label class="country-about__label" for="country-2">Албания</label>
           <label class="country-about__label" for="country-3">Македония</label>
           <label class="country-about__label" for="country-4">Черногория</label>
           <label class="country-about__label" for="country-5">Хорватия</label>
-        </div>
+        </nav>
+      </div>
+    </div>
         <div class="country-about__info-list">
           <div class="country-about__info-block">
             <div class="country-about__info">
@@ -149,6 +168,9 @@
             </div>
             <div class="country-about__review">
               <picture>
+                <source media="(max-width: 1023px)"
+                srcset="img/grecee-info-tablet@1x.jpg 1x, img/grecee-info-tablet@1x.jpg 2x" width="768"
+                height="415">
                 <img class="country-about__img" src="img/grecee-info-desktop@1x.jpg"
                   srcset="img/grecee-info-desktop@2x.jpg 2x" alt="Греция" width="430" width="596">
               </picture>
@@ -177,6 +199,9 @@
             </div>
             <div class="country-about__review">
               <picture>
+                <source media="(max-width: 1023px)"
+                srcset="img/albania-info-tablet@1x.jpg 1x, img/albania-info-tablet@1x.jpg 2x" width="768"
+                height="415">
                 <img class="country-about__img" src="img/albania-info-desktop@1x.jpg"
                   srcset="img/albania-info-desktop@2x.jpg 2x" alt="Албания" width="430" width="596">
               </picture>
@@ -204,6 +229,9 @@
             </div>
             <div class="country-about__review">
               <picture>
+                <source media="(max-width: 1023px)"
+                srcset="img/macedonia-info-tablet@1x.jpg 1x, img/macedonia-info-tablet@1x.jpg 2x" width="768"
+                height="415">
                 <img class="country-about__img" src="img/macedonia-info-desktop@1x.jpg"
                   srcset="img/macedonia-info-desktop@2x.jpg 2x" alt="Македония" width="430" width="596">
               </picture>
@@ -231,7 +259,10 @@
             </div>
             <div class="country-about__review">
               <picture>
-                <img class="country-about__img" src="img/montenegro-desktop@1x.jpg"
+                <source media="(max-width: 1023px)"
+                srcset="img/montenegro-info-tablet@1x.jpg 1x, img/montenegro-info-tablet@1x.jpg 2x" width="768"
+                height="415">
+                <img class="country-about__img" src="img/montenegro-info-desktop@1x.jpg"
                   srcset="img/montenegro-info-desktop@2x.jpg 2x" alt="Черногория" width="430" width="596">
               </picture>
               <div class="country-about__review-block review-block">
@@ -257,8 +288,11 @@
             </div>
             <div class="country-about__review">
               <picture>
+                <source media="(max-width: 1023px)"
+                srcset="img/сroatia-info-tablet@1x.jpg 1x, img/сroatia-info-tablet@1x.jpg 2x" width="768"
+                height="415">
                 <img class="country-about__img" src="img/сroatia-info-desktop@1x.jpg"
-                  srcset="сroatia-info-desktop@2x.jpg 2x" alt="греция" width="430" width="596">
+                  srcset="сroatia-info-desktop@2x.jpg 2x" alt="Хорватия" width="430" width="596">
               </picture>
               <div class="country-about__review-block review-block">
                 <h3 class="review-block__title">Отзывы</h3>
@@ -406,6 +440,7 @@
   </footer>
 
   <script src="js/tabs.min.js"></script>
+  <script src="js/dragscroll.min.js"></script>
 </body>
 
 </html>
