@@ -51,11 +51,11 @@
   .main-nav__list {
     flex-direction: column;
     width: 100%;
+    margin-top: 50px;
     margin-right: 0;
   }
 
   .site-list__item {
-    padding: 17px 20px;
     background-color: $color-light-grey;
     margin-bottom: 30px;
     font-size: 20px;
@@ -71,6 +71,7 @@
   }
 
   .site-list__link {
+    padding: 17px 20px;
     width: 100%;
     display: flex;
     align-items: center;

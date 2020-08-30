@@ -14,3 +14,13 @@
   letter-spacing: 2px;
   outline: none;
 }
+
+@media (max-width: $tablet-width) {
+  .button {
+    height: 50px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 20px 40px;
+  }
+}

@@ -8,10 +8,6 @@
   border-right: 1px solid $color-light-add;
 }
 
-.footer__block:last-child {
-  border: none;
-}
-
 .footer-title {
   font-weight: 600;
   font-size: 18px;
@@ -41,11 +37,13 @@
 
 .footer__about-corporate {
   margin-left: 48px;
+  border: none;
 }
 
 .footer__promo {
   font-size: 14px;
   line-height: 24px;
+  color: rgba(20, 21, 23, 0.5);
 }
 
 .footer__city-link {
@@ -67,13 +65,67 @@
   font-size: 14px;
 }
 
-.footer__tel--mail {
+.footer__mail--envelope {
   stroke: $color-light-add;
   margin-right: 17px;
+}
+
+.footer__mail-name {
+  display: none;
 }
 
 .footer__tel--phone {
   stroke: $color-light-add;
   stroke-width: 2;
   margin-right: 11px;
+}
+
+@media (max-width: $tablet-width) {
+  .footer {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .footer__city:last-child {
+    margin-right: 50px;
+  }
+
+  .footer__next-trip {
+    width: 55%;
+  }
+
+  .footer__our-contacts {
+    width: 30%;
+    margin-left: 50px;
+    padding-right: 0;
+    border: none;
+  }
+
+  .footer__contact {
+    min-width: 225px;
+  }
+
+  .footer__about-corporate {
+    border-top: 1px solid $color-light-add;
+    margin-left: 0;
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+
+  .footer-title--corporate {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__promo {
+    text-align: center;
+  }
+
+  .footer__mail-full-address {
+    display: none;
+  }
+
+  .footer__mail-name {
+    display: inline;
+  }
 }

@@ -1,0 +1,92 @@
+.price {
+  display: flex;
+  margin-bottom: 138px;
+}
+
+
+.price__block-info {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-top: 40px;
+  border: 3px solid rgba(44, 46, 63, 0.3);
+  border-radius: 6px;
+  background-color: $white;
+  margin-right: 30px;
+  width: 358px;
+}
+
+.price__block-info--red {
+  border-color: $color-main;
+}
+
+.price__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.price__header--red {
+  color: $color-main;
+}
+
+.price__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  margin: 0;
+}
+
+.price__cost {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: right;
+}
+
+.price__instuction {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+}
+
+.price__instuction--red {
+  border-bottom: 1px solid $color-main;
+}
+
+.price__advantages {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 54px;
+}
+
+.price__item {
+  display: flex;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.price__check-img {
+  margin-right: 16px;
+  margin-top: 5px;
+}
+
+.price__check-img--red {
+  fill: $color-main;
+}
+
+.price__item-text {
+  margin: 0;
+}
+
+.price__button {
+  display: block;
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+}
