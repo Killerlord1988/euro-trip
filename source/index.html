@@ -22,7 +22,7 @@
   </div>
 
   <header class="page-header">
-    <div class="page-header__top container">
+    <div class="page-header__top container no-js">
       <div class="page-header__wrapper">
         <a href="index.html" class="page-header__logo">
           <img src="img/logo.svg" alt="Логотип Way" width="58" height="22">
@@ -32,11 +32,11 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <use xlink:href="#icon-phone"></use>
-          <li class="site-list__item"><a href="#" class="site-list__link">О путешествии<svg
+          <li class="site-list__item"><a href="#visit-places" class="site-list__link">О путешествии<svg
                 class="site-list__shape-arrow" width="12" height="7">
                 <use xlink:href="#icon-shape-arrow"></use>
               </svg></a></li>
-          <li class="site-list__item"><a href="#" class="site-list__link">Цены<svg class="site-list__shape-arrow"
+          <li class="site-list__item"><a href="#price" class="site-list__link">Цены<svg class="site-list__shape-arrow"
                 width="12" height="7">
                 <use xlink:href="#icon-shape-arrow"></use>
               </svg></a></li>
@@ -53,20 +53,20 @@
           <h1 class="promo__title">Путешествие по Европе</h1>
           <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
             потрясающая красота природы.</p>
-          <button class="promo__button button">Смотреть тур <img class="promo__button--arrow"
-              src="img/icon-arrow-down.svg" alt="стрелка вниз" width="14" height="14"></button>
+          <a class="promo__button button" href="#country-about">Смотреть тур <img class="promo__button--arrow"
+              src="img/icon-arrow-down.svg" alt="стрелка вниз" width="14" height="14"></a>
         </div>
       </div>
     </div>
   </header>
   <main>
-    <section class="visit-places container">
+    <section class="visit-places container" id="visit-places">
       <h2 class="visit-places__title">Места посещения</h2>
       <p class="visit-places__instruction">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
 
       <div class="visit-places__list">
           <div class="visit-places__item">
-            <div class="visit-places__overlay"><button class="visit-places__button">смотреть подробнее</button>
+            <div class="visit-places__overlay"><a href="#country-1" class="visit-places__button">смотреть подробнее</a>
             </div>
             <picture>
               <source media="(max-width: 1023px)"
@@ -78,7 +78,7 @@
             <p class="visit-places__country">Греция</p>
           </div>
           <div class="visit-places__item">
-            <div class="visit-places__overlay"><button class="visit-places__button">смотреть подробнее</button>
+            <div class="visit-places__overlay"><a href="#country-2" class="visit-places__button">смотреть подробнее</a>
             </div>
             <picture>
               <source media="(max-width: 1023px)"
@@ -90,7 +90,7 @@
             <p class="visit-places__country">Албания</p>
           </div>
           <div class="visit-places__item">
-            <div class="visit-places__overlay"><button class="visit-places__button">смотреть подробнее</button>
+            <div class="visit-places__overlay"><a href="#country-3" class="visit-places__button">смотреть подробнее</a>
             </div>
             <picture>
               <source media="(max-width: 1023px)"
@@ -102,7 +102,7 @@
             <p class="visit-places__country">Македония</p>
           </div>
           <div class="visit-places__item">
-            <div class="visit-places__overlay"><button class="visit-places__button">смотреть подробнее</button>
+            <div class="visit-places__overlay"><a href="#country-4" class="visit-places__button">смотреть подробнее</a>
             </div>
             <picture>
               <source media="(max-width: 1023px)"
@@ -114,7 +114,7 @@
             <p class="visit-places__country">Черногория</p>
           </div>
           <div class="visit-places__item">
-            <div class="visit-places__overlay"><button class="visit-places__button">смотреть подробнее</button>
+            <div class="visit-places__overlay"><a href="#country-5" class="visit-places__button">смотреть подробнее</a>
             </div>
             <picture>
               <source media="(max-width: 1023px)"
@@ -131,7 +131,7 @@
 
     <section class="country-price">
       <img class="country-price__map-world" src="img/map-world.svg" alt="контур стран">
-      <section class="country-about container">
+      <section class="country-about container" id="country-about">
         <input class="country-about__btn country-about__grecce visually-hidden" type="radio" name="country-about-toggle"
           id="country-1" checked="checked">
         <input class="country-about__btn country-about__albania visually-hidden" type="radio"
@@ -146,8 +146,8 @@
           <div class="country-about__nav-wrapper">
           <div class="country-about__nav-menulimiter dragscroll">
         <nav class="country-about__nav">
-          <label class="country-about__label" for="country-1">Греция</label>
-          <label class="country-about__label" for="country-2">Албания</label>
+          <label class="country-about__label" for="country-1" id="grecee">Греция</label>
+          <label class="country-about__label" for="country-2" id="albania">Албания</label>
           <label class="country-about__label" for="country-3">Македония</label>
           <label class="country-about__label" for="country-4">Черногория</label>
           <label class="country-about__label" for="country-5">Хорватия</label>
@@ -326,7 +326,7 @@
         </div>
       </section>
 
-      <section class="price container">
+      <section class="price container" id="price">
         <div class="price__block-info price__block-info--red">
           <div class="price__header price__header--red">
           <h2 class="price__title">Комплексный</h2>
@@ -454,6 +454,7 @@
     </div>
   </footer>
 
+  <script src="js/menu.min.js"></script>
   <script src="js/tabs.min.js"></script>
   <script src="js/dragscroll.min.js"></script>
 </body>

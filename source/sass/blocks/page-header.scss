@@ -53,6 +53,7 @@
 
   .page-header__wrapper {
     justify-content: space-between;
+    height: 50px;
   }
 
   .page-header__logo {
@@ -88,6 +89,19 @@
     background-repeat: no-repeat;
     background-size: 30px 30px;
     transition: 0.3s;
+    z-index: 50;
+  }
+
+  .page-header__toggle--close {
+    background-image: url("../img/icon-close.svg");
+    background-color: $white;
+    background-size: 22px 22px;
+  }
+
+  .no-js {
+    .page-header__toggle {
+      display: none;
+    }
   }
 }
 
