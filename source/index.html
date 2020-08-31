@@ -454,6 +454,32 @@
     </div>
   </footer>
 
+  <!-- Модальное окно -->
+  <template id="modal__buy">
+  <section class="modal">
+    <div class="modal__overlay">
+      <div class="modal__block">
+        <picture>
+          <img class="modal__bg-img" src="img/modal-buy@1x.jpg"
+                  srcset="img/modal-buy@1x.jpg 2x" alt="Купить тур" width="338" width="444">
+        </picture>
+        <div class="modal__form">
+        <h2 class="modal__title">Купить тур</h2>
+        <form class="modal__data-block" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="modal__requerd-symbol"><svg class="modal__requerd-img" alt="иконка телефона" width="6" height="6">
+            <use xlink:href="#icon-requerd-symbol"></use>
+          </svg></div>
+          <span class="modal__input-prefix">+7</span><input class="modal__input-field modal__input-field--number" name="phone" type="tel" pattern="[0-9]*" placeholder="Введите 10 цифр номера" required>
+          <input class="modal__input-field modal__input-field--mail" name="email" type="email" placeholder="E-mail">
+          <button class="modal__button button" type="submit">Отправить</button>
+        </form>
+      </div>
+      <button class="modal__close"></button>
+    </div>
+    </div>
+  </section>
+</template>
+
   <script src="js/menu.min.js"></script>
   <script src="js/tabs.min.js"></script>
   <script src="js/dragscroll.min.js"></script>
