@@ -129,3 +129,69 @@
     display: inline;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .footer {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .footer__block {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color-light-add;
+    padding-bottom: 20px;
+  }
+
+  .footer__block:last-child {
+    border: none;
+    padding-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .footer__city-group {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .footer__city {
+    margin-right: 0;
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .footer__city:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .footer__item {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+
+  .footer__city-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__our-contacts {
+    margin-left: 0;
+  }
+
+  .footer-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer__contact {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__contact:last-child {
+    margin-bottom: 0;
+  }
+}
