@@ -423,11 +423,11 @@
                 height="6">
                 <use xlink:href="#icon-requerd-symbol"></use>
               </svg></div>
-            <span class="question__input-prefix">+7</span><input
-              class="question__input-field question__input-field--number" name="phone" type="tel" pattern="[0-9]*"
-              placeholder="Введите 10 цифр номера" required>
-            <input class="question__input-field question__input-field--mail" name="email" type="email"
-              placeholder="E-mail">
+            <span class="question__input-prefix">+7</span><div class="input__block"><input
+              class="question__input-field question__input-field--number input-data" name="phone" type="tel" pattern="[0-9]*"
+              placeholder="Введите 10 цифр номера" required><span class="input-invalid">Данные не верны</span></div>
+              <div class="input__block"><input class="question__input-field question__input-field--mail input-data" name="email" type="email"
+              placeholder="E-mail"><span class="input-invalid">Данные не верны</span></div>
             <button class="question__button button" type="submit">Отправить</button>
           </form>
         </div>
@@ -496,9 +496,9 @@
                   height="6">
                   <use xlink:href="#icon-requerd-symbol"></use>
                 </svg></div>
-              <span class="modal__input-prefix">+7</span><input class="modal__input-field modal__input-field--number input-field"
-                name="phone" type="tel" pattern="[0-9]*" placeholder="Введите 10 цифр номера" required>
-              <input class="modal__input-field modal__input-field--mail input-field" name="email" type="email" placeholder="E-mail">
+              <span class="modal__input-prefix">+7</span><div class="input__block"><input class="modal__input-field modal__input-field--number input-field input-data"
+                name="phone" type="tel" pattern="[0-9]*" placeholder="Введите 10 цифр номера" required><span class="input-invalid">Данные не верны</span></div>
+                <div class="input__block"><input class="modal__input-field modal__input-field--mail input-field input-data" name="email" type="email" placeholder="E-mail"><span class="input-invalid">Данные не верны</span></div>
               <button class="modal__button button submit" type="submit">Отправить</button>
             </form>
           </div>

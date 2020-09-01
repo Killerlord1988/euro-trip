@@ -74,3 +74,25 @@ img {
 a {
   text-decoration: none;
 }
+
+.input-data {
+  position: relative;
+}
+
+.input-invalid {
+  position: absolute;
+  display: none;
+
+  font-size: 12px;
+  line-height: 15px;
+  color: $color-main;
+  top: -16px;
+}
+
+.input-data:invalid {
+  border-color: $color-main;
+}
+
+.input-data:invalid ~ .input-invalid {
+  display: block;
+}

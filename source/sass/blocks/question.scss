@@ -110,6 +110,10 @@
   .question__button {
     width: 250px;
   }
+
+  .input__block {
+    width: 269px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -144,6 +148,10 @@
   }
 
   .question__button {
+    width: 100%;
+  }
+
+  .input__block {
     width: 100%;
   }
 }
