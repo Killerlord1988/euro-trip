@@ -43,11 +43,6 @@
   margin-bottom: 24px;
 }
 
-// .question__input {
-//   width: 100%;
-//   display: flex;
-// }
-
 .question__form {
   width: 100%;
   display: flex;
@@ -80,11 +75,13 @@
   position: absolute;
   left: 23px;
   top: 17px;
+  z-index: 10;
 }
 
 .question__requerd-symbol {
   position: absolute;
   left: 14px;
+  z-index: 10;
 }
 
 .question__button {
@@ -109,6 +106,10 @@
 
   .question__button {
     width: 250px;
+  }
+
+  .input__block {
+    width: 269px;
   }
 }
 
@@ -144,6 +145,10 @@
   }
 
   .question__button {
+    width: 100%;
+  }
+
+  .input__block {
     width: 100%;
   }
 }

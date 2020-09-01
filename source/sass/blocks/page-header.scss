@@ -33,12 +33,6 @@
   position: relative;
 }
 
-// @media (max-width: 1316px) {
-//   .page-header__bottom {
-//     background-size: auto;
-//   }
-// }
-
 .page-header__toggle {
   display: none;
 }
@@ -64,7 +58,6 @@
     background-image: url("../img/bg-header-tablet@1x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    // min-height: 344px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

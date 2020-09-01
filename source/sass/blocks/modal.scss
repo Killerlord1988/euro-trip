@@ -68,12 +68,14 @@
   position: absolute;
   left: 23px;
   top: 17px;
+  z-index: 10;
 }
 
 .modal__requerd-symbol {
   position: absolute;
   left: 14px;
   top: 14px;
+  z-index: 10;
 }
 
 .modal__button {
@@ -130,5 +132,9 @@
   .modal__button {
     width: auto;
     margin: 0;
+  }
+
+  .input__block {
+    width: 100%;
   }
 }

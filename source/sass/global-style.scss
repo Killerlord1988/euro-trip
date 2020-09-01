@@ -49,14 +49,6 @@
   box-sizing: border-box;
 }
 
-// a:focus,
-// input:focus,
-// button:focus,
-// textarea:focus,
-// label:focus {
-//   outline: $focus-outline;
-// }
-
 body {
   margin: 0;
   font-weight: 400;
@@ -75,6 +67,24 @@ a {
   text-decoration: none;
 }
 
-.poppin {
-  font-family: $second-font;
+.input__block {
+  position: relative;
+}
+
+.input-invalid {
+  position: absolute;
+  display: none;
+
+  font-size: 12px;
+  line-height: 15px;
+  color: $color-main;
+  top: -16px;
+}
+
+.input-data:invalid {
+  border-color: $color-main;
+}
+
+.input-data:invalid ~ .input-invalid {
+  display: block;
 }
