@@ -69,7 +69,6 @@
 
         var modalForm = document.querySelector('.modal__data-block');
         var inputData = modalForm.querySelectorAll('.input-field');
-        var submitData = modalForm.querySelectorAll('.submit');
 
         modalForm.addEventListener('submit', function (evt) {
           evt.preventDefault();
