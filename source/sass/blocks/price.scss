@@ -16,8 +16,22 @@
   width: 358px;
 }
 
-.price__block-info--red {
+.price__block-info:hover {
   border: 3px solid $color-main;
+  padding: 28px;
+  padding-top: 38px;
+
+  .price__header {
+    color: $color-main;
+  }
+
+  .price__check-img {
+    fill: $color-main;
+  }
+
+  .price__instuction {
+    border-bottom: 1px solid $color-main;
+  }
 }
 
 .price__header {
@@ -26,10 +40,6 @@
   align-items: center;
   margin: 0;
   margin-bottom: 40px;
-}
-
-.price__header--red {
-  color: $color-main;
 }
 
 .price__title {
@@ -54,10 +64,6 @@
   border-bottom: 1px solid rgba(44, 46, 63, 0.3);
 }
 
-.price__instuction--red {
-  border-bottom: 1px solid $color-main;
-}
-
 .price__advantages {
   margin: 0;
   padding: 0;
@@ -74,10 +80,6 @@
 .price__check-img {
   margin-right: 16px;
   margin-top: 5px;
-}
-
-.price__check-img--red {
-  fill: $color-main;
 }
 
 .price__item-text {
@@ -150,6 +152,10 @@
   .price__block-info {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  .price__block-info:hover {
+    padding: 28px 18px 0;
   }
 
   .price__title {
