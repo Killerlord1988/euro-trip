@@ -2,59 +2,102 @@
 'use strict';
 
 (function () {
-  var modalTemplate = document.querySelector('#modal__buy')
-    .content
-    .querySelector('.modal');
-  var modal = modalTemplate.cloneNode(true);
+    var modalTemplate = document.querySelector('#modal__buy')
+      .content
+      .querySelector('.modal');
+    var modal = modalTemplate.cloneNode(true);
 
-  var successTemplate = document.querySelector('#success')
-    .content
-    .querySelector('.success');
-  var success = successTemplate.cloneNode(true);
+    var successTemplate = document.querySelector('#success')
+      .content
+      .querySelector('.success');
+    var success = successTemplate.cloneNode(true);
 
-  var buyTour = document.querySelectorAll('.buy__tour');
+    var buyTour = document.querySelectorAll('.buy__tour');
 
-  Object.keys(buyTour).forEach(function (btn) {
-    buyTour[btn].addEventListener('click', function () {
-      document.body.querySelector('main').prepend(modal);
+    function addModalHandler() {
       var modalBuy = document.body.querySelector('main .modal');
-      var overlayArea = modalBuy.querySelector('.modal__overlay')
-      var closeButton = modalBuy.querySelector('.modal__close');
+      var overlayArea = modalBuy.querySelector('.overlay')
+      var closeButton = modalBuy.querySelector('.close');
 
-      function removeModalClick() {
-        modalBuy.parentNode.removeChild(modalBuy);
+
+      function removeListener() {
         overlayArea.removeEventListener('click', removeModalOverlayClick);
         closeButton.removeEventListener('click', removeModalClick);
         document.removeEventListener('keydown', removeModalPressEscape);
+      }
+
+      function addListener() {
+        overlayArea.addEventListener('click', removeModalOverlayClick);
+        closeButton.addEventListener('click', removeModalClick);
+        document.addEventListener('keydown', removeModalPressEscape);
+      }
+
+      function removeModal() {
+        modalBuy.parentNode.removeChild(modalBuy);
+      }
+
+      function removeModalClick() {
+        removeModal();
+        removeListener();
       };
 
       function removeModalOverlayClick(evt) {
         if (evt.target === overlayArea) {
-          modalBuy.parentNode.removeChild(modalBuy);
-          overlayArea.removeEventListener('click', removeModalOverlayClick);
-          closeButton.removeEventListener('click', removeModalClick);
-          document.removeEventListener('keydown', removeModalPressEscape);
+          removeModal();
+          removeListener();
         }
       };
 
       function removeModalPressEscape(evt) {
         if (evt.key === 'Escape') {
-          modalBuy.parentNode.removeChild(modalBuy);
-          overlayArea.removeEventListener('click', removeModalOverlayClick);
-          closeButton.removeEventListener('click', removeModalClick);
-          document.removeEventListener('keydown', removeModalPressEscape);
+          removeModal();
+          removeListener();
         }
       };
 
-      overlayArea.addEventListener('click', removeModalOverlayClick);
-      closeButton.addEventListener('click', removeModalClick);
-      document.addEventListener('keydown', removeModalPressEscape);
-    })
-  })
+      addListener();
+    }
 
+    Object.keys(buyTour).forEach(function (btn) {
+      buyTour[btn].addEventListener('click', function () {
+        document.body.querySelector('main').prepend(modal);
 
+        var phoneInput = document.querySelector('.modal__input-field--number');
+        phoneInput.focus();
 
+        addModalHandler();
 
+        var modalForm = document.querySelector('.modal__data-block');
+        var inputData = modalForm.querySelectorAll('.input-field');
+        var submitData = modalForm.querySelectorAll('.submit');
 
+        modalForm.addEventListener('submit', function (evt) {
+          evt.preventDefault();
+          var arrData = [];
+          Object.keys(inputData).forEach(function (el) {
+            arrData.push(inputData[el].value);
+          })
+          localStorage.setItem('personData', JSON.stringify(arrData));
+          var modal = document.body.querySelector('main .modal');
+          modal.parentNode.removeChild(modal);
+          document.body.querySelector('main').prepend(success);
+          addModalHandler();
+        });
+      });
+    });
 
-})();
+    var questionForm = document.querySelector('.question__form');
+    var questionInput = questionForm.querySelectorAll('.question__input-field');
+
+    questionForm.addEventListener('submit', function (evt) {
+      evt.preventDefault();
+      var arrData = [];
+      Object.keys(questionInput).forEach(function (el) {
+        arrData.push(questionInput[el].value);
+      })
+      localStorage.setItem('personData', JSON.stringify(arrData));
+      document.body.querySelector('main').prepend(success);
+
+      addModalHandler();
+    });
+    })();

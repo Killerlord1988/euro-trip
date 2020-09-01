@@ -483,7 +483,7 @@
   <!-- Модальное окно -->
   <template id="modal__buy">
     <section class="modal">
-      <div class="modal__overlay">
+      <div class="modal__overlay overlay">
         <div class="modal__block">
           <picture>
             <img class="modal__bg-img" src="img/modal-buy@1x.jpg" srcset="img/modal-buy@1x.jpg 2x" alt="Купить тур"
@@ -496,24 +496,24 @@
                   height="6">
                   <use xlink:href="#icon-requerd-symbol"></use>
                 </svg></div>
-              <span class="modal__input-prefix">+7</span><input class="modal__input-field modal__input-field--number"
+              <span class="modal__input-prefix">+7</span><input class="modal__input-field modal__input-field--number input-field"
                 name="phone" type="tel" pattern="[0-9]*" placeholder="Введите 10 цифр номера" required>
-              <input class="modal__input-field modal__input-field--mail" name="email" type="email" placeholder="E-mail">
-              <button class="modal__button button" type="submit">Отправить</button>
+              <input class="modal__input-field modal__input-field--mail input-field" name="email" type="email" placeholder="E-mail">
+              <button class="modal__button button submit" type="submit">Отправить</button>
             </form>
           </div>
-          <button class="modal__close"></button>
+          <button class="modal__close close"></button>
         </div>
       </div>
     </section>
   </template>
 
   <template id="success">
-    <section class="success">
-      <div class="success__overlay">
+    <section class="success modal">
+      <div class="success__overlay overlay">
         <div class="success__block">
           <p class="success__message">Форма успешно отправлена,<br>спасибо! :)</p>
-          <button class="success__close"></button>
+          <button class="success__close close"></button>
         </div>
       </div>
     </section>
