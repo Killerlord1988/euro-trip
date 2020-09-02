@@ -27,13 +27,16 @@
       }
 
       function addListener() {
+        document.body.style.overflow = 'hidden';
         overlayArea.addEventListener('click', removeModalOverlayClick);
         closeButton.addEventListener('click', removeModalClick);
         document.addEventListener('keydown', removeModalPressEscape);
       }
 
       function removeModal() {
+        document.body.style.overflow = 'auto';
         modalBuy.parentNode.removeChild(modalBuy);
+
       }
 
       function removeModalClick() {
@@ -96,7 +99,6 @@
       })
       localStorage.setItem('personData', JSON.stringify(arrData));
       document.body.querySelector('main').prepend(success);
-
       addModalHandler();
     });
     })();
